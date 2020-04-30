@@ -29,11 +29,19 @@ The trained classification model and vectorizer are stored as “finalised_model
 ## Clustering Analysis
 Using the tweets and the respective data, we perform Sentiment Analysis to get the sentiment of the user, which will be later for identification of COVID-19 affected places as follows:  
 
-In the first approach, we used the set of data indexed by 1 above, with the named location. We clubbed the tweets according to the named location, such that all tweets from one location are together. Then we receive the sentiment of each tweet and for each tweet we perform the following task :
-Negative Tweet : +2 to Location score
-Positive Tweet : -1 to Location score  
+In the first approach, we used the set of data indexed by 1 above, with the named location. We clubbed the tweets according to the named location, such that all tweets from one location are together. Then we receive the sentiment of each tweet and for each tweet we perform the following task :   
+Negative Tweet : +2 to Location score   
+Positive Tweet : -1 to Location score     
+   
+Hence now the location with the most number of negative tweets can be perceived as the location most affected by COVID-19, which will be reflected in its score being high. We hence filter the 5 places with highest scores and output them as the five most affected locations. The code hence can be seen as **“Main_Code_1.ipynb”** and output as output.jpg.      
 
-Hence now the location with the most number of negative tweets can be perceived as the location most affected by COVID-19, which will be reflected in its score being high. We hence filter the 5 places with highest scores and output them as the five most affected locations. The code hence can be seen as **“Main_Code_1.ipynb”** and output as output.jpg.   
-
-In the second approach, we used the set of data indexed as 2 above, with the geo-location data. Here we perform Sentiment Analysis to set the sentiment related to each tweet, and then use Agglomerative Clustering to cluster the places and identify a localized region affected by the pandemic. The code hence can be seen as **“Main_Code_2.ipynb”** and the output image as clusters_2.png and clusters_4.png.
+In the second approach, we used the set of data indexed as 2 above, with the geo-location data. Here we perform Sentiment Analysis to set the sentiment related to each tweet, and then use Agglomerative Clustering to cluster the places and identify a localized region affected by the pandemic. The code hence can be seen as **“Main_Code_2.ipynb”** and the output image as clusters_2.png and clusters_4.png.   
 The clusters_2.png file shows when the regions are clustered into 2 parts and the clusters_4.png shows when the regions are clustered into 4 parts.
+
+
+## Contributers
+* Prabhakar Kumar
+* Harsh Gupta
+* Prasanna Venkateshan
+* Vardhan Malik
+* Kumar Raju
