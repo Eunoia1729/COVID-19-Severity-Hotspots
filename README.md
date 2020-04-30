@@ -6,9 +6,9 @@ For the collection of data, we have used the Tweepy API, using which we can retr
 Since we have tried to identify the affected places using two different approaches, as will be mentioned later, so we collected the data in two different forms:    
 In first approach, we mined for the recent 1000 tweets that are related with COVID-19 and got the information of its text and the named location of the user. The issue that we faced here was that the named location was not following a definite format, as for a place, let say “New Delhi, India”, different users had location as “Delhi”, “New Delhi”, ”New Delhi, India”, and other forms. In this method for every 1000 tweets we were able to get around 80% tweets that had all the required data. The data hence received is in the file “tweet_data_1.csv”.  The code hence used can be seen in the script named **“tweet_collection_to_dataset_1.py”**.    
 
-In the second approach, we mined for tweets that had text and the geo-location of the user. Since the availability of geo-location is based upon the preference of user, hence for every 1000 tweets we only were able to get around 10 tweets that had the information. The data hence received is in the file “tweet_data_2.csv”. The code hence used can be seen in the script named **“tweet_collection_to_dataset_2.py”**.   
+In the second approach, we mined for tweets that had text and the geo-location of the user. Since the availability of geo-location is based upon the preference of user, hence for every 1000 tweets we only were able to get around 10 tweets that had the information. The data hence received is in the file **“tweet_data_2.csv”**. The code hence used can be seen in the script named **“tweet_collection_to_dataset_2.py”**.   
 
-Link to DataSets : https://drive.google.com/drive/folders/1zqKDZG-9FeX6EKI7OMplwLfH8tpBFOgp?usp=sharing   
+Link to Datasets : https://drive.google.com/drive/folders/1zqKDZG-9FeX6EKI7OMplwLfH8tpBFOgp?usp=sharing   
    
 ## Pre-processing   
 In the pre-processing part we performed two steps, namely, replacing the emoticon with a word equivalent, and second to replace the slangs and acronyms by their appropriate meanings.   
@@ -39,7 +39,7 @@ In the second approach, we used the set of data indexed as 2 above, with the geo
 The clusters_2.png file shows when the regions are clustered into 2 parts and the clusters_4.png shows when the regions are clustered into 4 parts.
 
 
-## Contributers
+## Contributors
 * Prabhakar Kumar
 * Harsh Gupta
 * Prasanna Venkateshan
