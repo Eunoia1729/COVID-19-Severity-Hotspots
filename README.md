@@ -45,3 +45,15 @@ The clusters_2.png file shows when the regions are clustered into 2 parts and th
 * Prasanna Venkateshan
 * Vardhan Malik
 * Kumar Raju
+
+## Twitter API credentials
+
+The data-collection scripts read credentials from environment variables
+(never commit keys to the repository):
+
+```bash
+export TWITTER_CONSUMER_KEY=...
+export TWITTER_CONSUMER_SECRET=...
+export TWITTER_ACCESS_TOKEN=...
+export TWITTER_ACCESS_TOKEN_SECRET=...
+```
